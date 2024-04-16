@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_s10_user_rst_clkgate_181/sim/altera_s10_user_rst_clkgate.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_s10_user_rst_clkgate_181" />
+ <file
+   path="sim/resetRelease.v"
+   type="VERILOG"
+   library="resetRelease"
+   hasInlineConfiguration="true" />
+ <topLevel name="resetRelease.resetRelease" />
+ <deviceFamily name="stratix10" />
+</simPackage>

@@ -1,0 +1,32 @@
+# AFU JSON
+cci_mpf_md_lr_top.json
+
+# Include MPF
+C:${FPGA_BBB_CCI_SRC}/BBB_cci_mpf/hw/rtl/cci_mpf_sources.txt
+
+# AFU Wrapper HW
++incdir+.
+cci_afu_with_mpf.sv
+csr_mgr.sv
+cci_mpf_md_lr_top_afu.sv
+
+# MD LR HW
++incdir+../../rtl
++define+IS_AFU
+../../ip/FpMul/FpMul.ip
+../../ip/FpSub/FpSub.ip
+../../ip/toFp/toFp.ip
+../../ip/fftIP_max32/fftIP.ip
+../../ip/FpAdd/FpAdd.ip
+../../rtl/md_lr_pkg.sv
+../../rtl/clustered_greens_rom.sv
+../../rtl/cfg_sp_ro_mem.sv
+../../rtl/cfg_2p_1r1w_mem.sv
+../../rtl/cfg_sp_rw_mem.sv
+../../rtl/clustered_grid_mem.sv
+../../rtl/coeffgen_3rdo.sv
+../../rtl/customdelay.sv
+../../rtl/md_lr_seqr.sv
+../../rtl/md_lr_top.sv
+../../rtl/Reduction_Tree.sv
+

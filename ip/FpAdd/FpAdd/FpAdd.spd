@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_fp_functions_181/sim/dspba_library_package.vhd"
+   type="VHDL"
+   library="altera_fp_functions_181" />
+ <file
+   path="altera_fp_functions_181/sim/dspba_library.vhd"
+   type="VHDL"
+   library="altera_fp_functions_181" />
+ <file
+   path="altera_fp_functions_181/sim/FpAdd_altera_fp_functions_181_2ezb4pq.vhd"
+   type="VHDL"
+   library="altera_fp_functions_181" />
+ <file
+   path="sim/FpAdd.v"
+   type="VERILOG"
+   library="FpAdd"
+   hasInlineConfiguration="true" />
+ <topLevel name="FpAdd.FpAdd" />
+ <deviceFamily name="stratix10" />
+</simPackage>

@@ -1,0 +1,18 @@
+# system info resetRelease on 2020.11.14.08:04:46
+system_info:
+name,value
+DEVICE,1SG280LN2F43E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for resetRelease on 2020.11.14.08:04:46
+files:
+filepath,kind,attributes,module,is_top
+sim/resetRelease.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,resetRelease,true
+altera_s10_user_rst_clkgate_181/sim/altera_s10_user_rst_clkgate.sv,SYSTEM_VERILOG,,altera_s10_user_rst_clkgate,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+resetRelease.s10_user_rst_clkgate_0,altera_s10_user_rst_clkgate

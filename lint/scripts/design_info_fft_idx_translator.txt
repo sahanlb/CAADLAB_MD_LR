@@ -1,0 +1,32 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info_fft_idx_translator.txt
+// Description    : Cadence HAL design info text file for fft_idx_translator
+// 
+// ==========================================================================
+
+//---------------------------------------------------------------------------
+// IP
+//
+bb_list {}
+
+//---------------------------------------------------------------------------
+// Top_level
+//
+lint_checking file = ../rtl/fft_idx_translator.sv {
+ // Allow async. output assignments
+ SYNPRT off;
+
+ // Allow one pin busses
+ ONPNSG off;
+
+ // Output ports are intentionally unregistered
+ TPOUNR off;
+
+ // Path betwen inputs and outputs can be purely combinational
+ IOCOMB off;
+
+ // In some configs translation could be a passthru
+ FDTHRU off;
+}

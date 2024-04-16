@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altera="http://www.altera.com/XMLSchema/Qsys/SystemTree">
+  <instanceKey xsi:type="xs:string">resetRelease</instanceKey>
+  <instanceData xsi:type="data">
+    <parameters></parameters>
+    <interconnectAssignments>
+      <interconnectAssignment>
+        <name>$system.qsys_mm.clockCrossingAdapter</name>
+        <value>HANDSHAKE</value>
+      </interconnectAssignment>
+      <interconnectAssignment>
+        <name>$system.qsys_mm.maxAdditionalLatency</name>
+        <value>0</value>
+      </interconnectAssignment>
+    </interconnectAssignments>
+    <className>resetRelease</className>
+    <version>1.0</version>
+    <name>resetRelease</name>
+    <uniqueName>resetRelease</uniqueName>
+    <nonce>0</nonce>
+    <incidentConnections></incidentConnections>
+  </instanceData>
+  <children>
+    <node>
+      <instanceKey xsi:type="xs:string">s10_user_rst_clkgate_0</instanceKey>
+      <instanceData xsi:type="data">
+        <parameters>
+          <parameter>
+            <name>DEASSERTION_DELAY</name>
+            <value>0</value>
+          </parameter>
+          <parameter>
+            <name>INSERTION_DELAY</name>
+            <value>0</value>
+          </parameter>
+          <parameter>
+            <name>USER_CLKGATE_DELAY</name>
+            <value>0</value>
+          </parameter>
+          <parameter>
+            <name>USER_RESET_DELAY</name>
+            <value>0</value>
+          </parameter>
+        </parameters>
+        <interconnectAssignments></interconnectAssignments>
+        <className>altera_s10_user_rst_clkgate</className>
+        <version>18.1</version>
+        <name>s10_user_rst_clkgate_0</name>
+        <uniqueName>altera_s10_user_rst_clkgate</uniqueName>
+        <fixedName>altera_s10_user_rst_clkgate</fixedName>
+        <nonce>0</nonce>
+        <incidentConnections></incidentConnections>
+        <path>resetRelease.s10_user_rst_clkgate_0</path>
+      </instanceData>
+      <children></children>
+    </node>
+  </children>
+</node>

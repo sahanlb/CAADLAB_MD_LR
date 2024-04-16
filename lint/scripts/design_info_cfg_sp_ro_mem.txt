@@ -1,0 +1,56 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info_cfg_sp_mem.txt
+// Description    : Cadence HAL design info text file for cfg_sp_mem
+// 
+// ==========================================================================
+
+//---------------------------------------------------------------------------
+// IP
+//
+bb_list {}
+
+//---------------------------------------------------------------------------
+// Top_level
+//
+lint_checking file = ../rtl/cfg_sp_ro_mem.sv {
+ // Allow async. output assignments
+ SYNPRT off;
+
+ // Allow one pin busses
+ ONPNSG off;
+
+ // RAM bits shouldn't need a set or reset signal
+ FFWNSR off;
+ FFWASR off;
+
+ // Ignore warning about mem_array being blackboxed when size exceeds 16K
+ BBXSIG off;
+ 
+ // Ignore warnings about Verilog memories
+ VLGMEM off;
+
+ // allow synchronous and asynchronous logic in same design
+ SYNASN off;
+
+ // BLK_SEL_BITS is unused when BLKS = 1
+ USEPAR off 41-41;
+ 
+ // BADDR_MSB is unused when BDEPTH = 1
+ USEPAR off 47-47;
+
+ // Ignore bogus warning about multiple variables in nested index part select.
+ // Second variable is a parameter.
+ INDNES off 311-311;
+
+ // Allow reduction operation on unused_ok signal
+ REDOPR off 113-113;
+ REDOPR off 150-150;
+ REDOPR off 282-282;
+ REDOPR off 232-232;
+
+ // Read data always assigned either to directly to a register to via
+ //a MUX
+ TPOUNR off 287-287;
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.11.16.11:44:38"
+ outputDirectory="/home/anthony/ec953sp2020/gitrepos/md_lr/ip/resetRelease/resetRelease/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Stratix 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="1SG280LN2F43E1VG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="user_reset" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="user_reset" direction="output" role="user_reset" width="1" />
+  </interface>
+  <interface name="user_clkgate" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <property name="prSafe" value="false" />
+   <port name="user_clkgate" direction="output" role="user_clkgate" width="1" />
+  </interface>
+ </perimeter>
+ <entity kind="resetRelease" version="1.0" name="resetRelease">
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_DEVICE" value="1SG280LN2F43E1VG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Stratix 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="/home/anthony/ec953sp2020/gitrepos/md_lr/ip/resetRelease/resetRelease/synth/resetRelease.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/anthony/ec953sp2020/gitrepos/md_lr/ip/resetRelease/resetRelease/synth/resetRelease.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/anthony/ec953sp2020/gitrepos/md_lr/ip/resetRelease/resetRelease.ip" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/opt/altera/18.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="resetRelease">"Generating: resetRelease"</message>
+   <message level="Info" culprit="resetRelease">"Generating: altera_s10_user_rst_clkgate"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_s10_user_rst_clkgate"
+   version="18.1"
+   name="altera_s10_user_rst_clkgate">
+  <parameter name="USER_CLKGATE_DELAY" value="40" />
+  <parameter name="DEASSERTION_DELAY" value="40" />
+  <parameter name="USER_RESET_DELAY" value="40" />
+  <parameter name="INSERTION_DELAY" value="0" />
+  <generatedFiles>
+   <file
+       path="/home/anthony/ec953sp2020/gitrepos/md_lr/ip/resetRelease/resetRelease/altera_s10_user_rst_clkgate_181/synth/altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/anthony/ec953sp2020/gitrepos/md_lr/ip/resetRelease/resetRelease/altera_s10_user_rst_clkgate_181/synth/altera_s10_user_rst_clkgate.sv"
+       attributes="TOP_LEVEL_FILE" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/opt/altera/18.1/ip/altera/pgm/altera_s10_user_rst_clkgate/altera_s10_user_rst_clkgate_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="resetRelease" as="s10_user_rst_clkgate_0" />
+  <messages>
+   <message level="Info" culprit="resetRelease">"Generating: altera_s10_user_rst_clkgate"</message>
+  </messages>
+ </entity>
+</deploy>

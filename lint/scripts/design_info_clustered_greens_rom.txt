@@ -1,0 +1,34 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info_clustered_greens_rom.txt
+// Description    : Cadence HAL design info text file for clustered_greens_rom
+// 
+// ==========================================================================
+
+//---------------------------------------------------------------------------
+// IP
+//
+bb_list {
+  designunit = cfg_sp_ro_mem;
+}
+
+//---------------------------------------------------------------------------
+// Top_level
+//
+lint_checking file = ../rtl/clustered_greens_rom.sv {
+ // Allow async. output assignments
+ SYNPRT off;
+
+ // Allow one pin busses
+ ONPNSG off;
+
+ // Allow active high asynchronous resets
+ ASNRST off;
+
+ // allow synchronous and asynchronous logic in same design
+ SYNASN off;
+
+ // Allow for compiler directives that encapsulate assertions
+ CDWARN off;
+}

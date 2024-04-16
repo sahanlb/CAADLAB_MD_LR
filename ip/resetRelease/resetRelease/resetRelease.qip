@@ -1,0 +1,46 @@
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_TOOL_NAME "QsysPrimePro"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_TOOL_ENV "QsysPrimePro"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_TOOL_VENDOR_NAME "Intel Corporation"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_TOP_LEVEL_COMPONENT_NAME "altera_s10_user_rst_clkgate"
+set_global_assignment -library "resetRelease" -name SOPCINFO_FILE [file join $::quartus(qip_path) "resetRelease.sopcinfo"]
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name SLD_INFO "QSYS_NAME resetRelease HAS_SOPCINFO 1 GENERATION_ID 0"
+set_global_assignment -library "resetRelease" -name MISC_FILE [file join $::quartus(qip_path) "resetRelease.cmp"]
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_TARGETED_DEVICE_FAMILY "Stratix 10"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_GENERATED_DEVICE_FAMILY "{Stratix 10}"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "resetRelease" -name MISC_FILE [file join $::quartus(qip_path) "../resetRelease.ip"]
+
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_NAME "YWx0ZXJhX3MxMF91c2VyX3JzdF9jbGtnYXRl"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_DISPLAY_NAME "VXNlciBSZXNldCBhbmQgQ2xvY2sgR2F0ZSBJbnRlbCBTdHJhdGl4IDEwIEZQR0EgSVA="
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_VERSION "MTguMQ=="
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_DESCRIPTION "VGhpcyBJUCBpcyB1c2VkIHRvIHNwZWNpZnkgdGltaW5nIHRvIGNvbnRyb2wgcmVzZXQgYW5kIGNsb2NrIGdhdGUgc2lnbmFsLg=="
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_PARAMETER "REVBU1NFUlRJT05fREVMQVk=::NDA=::RGVhc3NlcnRpb24gRGVsYXk="
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_PARAMETER "SU5TRVJUSU9OX0RFTEFZ::MA==::SW5zZXJ0aW9uIERlbGF5"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_PARAMETER "VVNFUl9SRVNFVF9ERUxBWQ==::NDA=::VVNFUl9SRVNFVF9ERUxBWQ=="
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_PARAMETER "VVNFUl9DTEtHQVRFX0RFTEFZ::NDA=::VVNFUl9DTEtHQVRFX0RFTEFZ"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_COMPONENT_GROUP "QmFzaWMgRnVuY3Rpb25zL0NvbmZpZ3VyYXRpb24gYW5kIFByb2dyYW1taW5n"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_NAME "cmVzZXRSZWxlYXNl"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_DISPLAY_NAME "c3lzdGVt"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_AUTHOR "SW50ZWwgQ29ycG9yYXRpb24="
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::U3RyYXRpeCAxMA==::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MVNHMjgwTE4yRjQzRTFWRw==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "resetRelease" -library "resetRelease" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::MQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+
+
+set_global_assignment -library "altera_s10_user_rst_clkgate_181" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "altera_s10_user_rst_clkgate_181/synth/altera_s10_user_rst_clkgate.sv"]
+set_global_assignment -library "resetRelease" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/resetRelease.v"]
+
+
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_TOOL_NAME "altera_s10_user_rst_clkgate"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_TOOL_VERSION "18.1"
+set_global_assignment -entity "altera_s10_user_rst_clkgate" -library "altera_s10_user_rst_clkgate_181" -name IP_TOOL_ENV "QsysPrimePro"
+

@@ -1,0 +1,48 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info_distributed_grid_mem.txt
+// Description    : Cadence HAL design info text file for distributed_grid_mem
+// 
+// ==========================================================================
+
+//---------------------------------------------------------------------------
+// IP
+//
+bb_list {
+  designunit = cfg_sp_mem;
+}
+
+//---------------------------------------------------------------------------
+// Top_level
+//
+lint_checking file = ../rtl/distributed_grid_mem.sv {
+ // Allow async. output assignments
+ SYNPRT off;
+
+ // Allow one pin busses
+ ONPNSG off;
+
+ // RAM bits shouldn't need a set or reset signal
+ FFWNSR off;
+ FFWASR off;
+
+ // allow synchronous and asynchronous logic in same design
+ SYNASN off;
+
+ // Allow for unregistered outputs
+ TPOUNR off 254-254;
+
+ // Allow for compiler directives that encapsulate assertions
+ CDWARN off 205-205;
+ CDWARN off 217-217;
+
+ // Allow for reduction OR over large number of bits
+ REDOPR off 224-224;
+ REDOPR off 228-228;
+ REDOPR off 235-235;
+
+ // Allow black-boxing of large signals
+ BBXSIG off 87-87;
+ BBXSIG off 89-90;
+}

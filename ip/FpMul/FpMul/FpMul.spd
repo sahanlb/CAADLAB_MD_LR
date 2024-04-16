@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_fp_functions_181/sim/dspba_library_package.vhd"
+   type="VHDL"
+   library="altera_fp_functions_181" />
+ <file
+   path="altera_fp_functions_181/sim/dspba_library.vhd"
+   type="VHDL"
+   library="altera_fp_functions_181" />
+ <file
+   path="altera_fp_functions_181/sim/FpMul_altera_fp_functions_181_yr5r2ii.vhd"
+   type="VHDL"
+   library="altera_fp_functions_181" />
+ <file
+   path="sim/FpMul.v"
+   type="VERILOG"
+   library="FpMul"
+   hasInlineConfiguration="true" />
+ <topLevel name="FpMul.FpMul" />
+ <deviceFamily name="stratix10" />
+</simPackage>

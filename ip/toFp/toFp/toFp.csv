@@ -1,0 +1,20 @@
+# system info toFp on 2020.11.16.11:34:10
+system_info:
+name,value
+DEVICE,1SG280LN2F43E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for toFp on 2020.11.16.11:34:10
+files:
+filepath,kind,attributes,module,is_top
+sim/toFp.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,toFp,true
+altera_fp_functions_181/sim/dspba_library_package.vhd,VHDL,,toFp_altera_fp_functions_181_2kywi7q,false
+altera_fp_functions_181/sim/dspba_library.vhd,VHDL,,toFp_altera_fp_functions_181_2kywi7q,false
+altera_fp_functions_181/sim/toFp_altera_fp_functions_181_2kywi7q.vhd,VHDL,,toFp_altera_fp_functions_181_2kywi7q,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+toFp.fp_functions_0,toFp_altera_fp_functions_181_2kywi7q

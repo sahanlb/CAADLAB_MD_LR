@@ -1,0 +1,66 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : hal.def
+// Description    : Cadence HAL definitions file
+// 
+// ==========================================================================
+include default // include default hal.def file
+
+params DIFFMN {off}; // allow module name and file name to differ
+params CBYNAM {off}; // allow port connections by positional ordering
+params MAXLEN {off}; // do not limit the number of chraracters on a line
+params STYVAL {off}; // allow numeric values to be used or identifiers
+params DECLIN {off}; // allow same-line HDL declarations (e.g. wire a1, b1;)
+params LCVARN {off}; // allow use of uppercase letters
+params MULTMF {off}; // allow multiple design-unit definitions per file
+params NUMSUF {off}; // allow numerical suffixes
+params LRGOPR {max_op_size=32}; // limit operations to 32 bits
+params IDLENG {off}; // allow instance ID names to be <4 or >16 characters
+
+params UCCONN {off}; // allow mixed case in identifiers
+params OLDALW {off}; // allow use of old always blocks
+
+params MXFNOT {max_fanout_limit=32};
+
+// Allow full case statements to exist without default clause
+params CDEFNC {full_case_with_no_default_allowed="yes"};
+
+// Don't tell me when I should use constants instead of literals
+params CNSTLT {off};
+params PRMFSM {off};
+
+params NOBLKN {off};  // ok if each block doesn't have meaningful name
+params REVROP {off};  // purposefully splitting registers into comb and seq always blocks, which has blocking and non-blocking assignments, respectively
+
+//allow different drivers for different signal bits
+params DFDRVS {off};
+
+// Ignore unread unused_ok signals
+params URDWIR {pattern="unused*ok"};
+
+// Allow explicitly unconnected outputs
+params UNCONN {allow_explicitly_unconnected="yes"}
+params UNCONO {ignore_explicitly_unconnected_port="yes"}
+
+// Waive warnings about fanout limits
+params MXFNOT {off};
+
+// Allow synchronous and asynchronous logic to exist in the same file
+params SYNASN {off};
+
+// Allow glue logic to exist at the top level
+params ATLGLC {off};
+
+// Allow expressions in port connections
+params IPRTEX {off};
+
+// Allow combinational paths to cross moule hierarchy
+params CBPAHI {off};
+
+// Allow explicitly unconnected outputs
+params UNCONN {allow_explicitly_unconnected="yes"}
+params UNCONO {ignore_explicitly_unconnected_port="yes"}
+
+// Allow concatenation and replication expressions in port connections
+params EXPIPC {allow_concat_operation="concat:replicate"};

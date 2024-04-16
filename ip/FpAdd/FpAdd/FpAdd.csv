@@ -1,0 +1,20 @@
+# system info FpAdd on 2020.11.16.11:28:39
+system_info:
+name,value
+DEVICE,1SG280LN2F43E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for FpAdd on 2020.11.16.11:28:39
+files:
+filepath,kind,attributes,module,is_top
+sim/FpAdd.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,FpAdd,true
+altera_fp_functions_181/sim/dspba_library_package.vhd,VHDL,,FpAdd_altera_fp_functions_181_2ezb4pq,false
+altera_fp_functions_181/sim/dspba_library.vhd,VHDL,,FpAdd_altera_fp_functions_181_2ezb4pq,false
+altera_fp_functions_181/sim/FpAdd_altera_fp_functions_181_2ezb4pq.vhd,VHDL,,FpAdd_altera_fp_functions_181_2ezb4pq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+FpAdd.fp_functions_0,FpAdd_altera_fp_functions_181_2ezb4pq

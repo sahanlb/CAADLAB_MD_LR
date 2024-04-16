@@ -1,0 +1,7 @@
+	component resetRelease is
+		port (
+			user_reset   : out std_logic;  -- user_reset
+			user_clkgate : out std_logic   -- user_clkgate
+		);
+	end component resetRelease;
+

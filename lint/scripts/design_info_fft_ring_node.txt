@@ -1,0 +1,37 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info_fft_ring_node.txt
+// Description    : Cadence HAL design info text file for fft_ring_node
+// 
+// ==========================================================================
+
+//---------------------------------------------------------------------------
+// Top_level
+//
+lint_checking file = ../rtl/fft_ring_node.sv {
+ // Allow async. output assignments
+ SYNPRT off;
+
+ // Allow one pin busses
+ ONPNSG off;
+
+ // Allow top-level outputs to not be registered
+ TPOUNR off;
+
+ // allow synchronous and asynchronous logic in same design
+ SYNASN off;
+
+ // Allow $display and $finish system tasks
+ BADSYS off 272-272;
+ BADSYS off 286-287;
+ BADSYS off 297-298;
+}
+
+lint_checking file = ../rtl/fft_ring_pkg.sv {
+  // Waive recompilation guards
+  CDWARN off 9-9;
+  CDWARN off 10-10;
+  CDWARN off 22-22;
+  USEMAC off 10-10;
+}

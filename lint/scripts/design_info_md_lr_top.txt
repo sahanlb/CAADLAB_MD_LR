@@ -1,0 +1,77 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info_md_lr_top.txt
+// Description    : Cadence HAL design info text file for md_lr_top
+// 
+// ==========================================================================
+
+//---------------------------------------------------------------------------
+// IP
+//
+bb_list {
+  designunit = cfg_sp_rw_mem;
+  designunit = md_lr_seqr;
+  designunit = customdelay;
+  designunit = coeffgen_3rdo;
+  designunit = clustered_grid_mem;
+  designunit = clustered_greens_rom;
+  designunit = FpAdd;
+  designunit = FpMul;
+  designunit = fftIP;
+  designunit = resetRelease;
+}
+
+//---------------------------------------------------------------------------
+// Top_level
+//
+lint_checking file = ../rtl/md_lr_top.sv {
+ // Allow async. output assignments
+ SYNPRT off;
+
+ // Allow one pin busses
+ ONPNSG off;
+
+ // Allow top-level outputs to not be registered
+ TPOUNR off;
+
+ // allow synchronous and asynchronous logic in same design
+ SYNASN off;
+ 
+ // Allow active high asynchronous resets
+ ASNRST off;
+
+ // Allow module that contains reset generation logic to contain
+ // extraneous logic
+ RSTGNP off;
+
+ // Allow flop resets to not be driven by module port
+ ACNCPI off;
+ RSTINP off;
+
+ // Allow compiler directives that provide AFU/non-AFU configuration
+ CDWARN off 15-15;
+ CDWARN off 17-17;
+ CDWARN off 129-129;
+ CDWARN off 131-131;
+ CDWARN off 157-157;
+ CDWARN off 159-159;
+ CDWARN off 253-253;
+ CDWARN off 255-255;
+}
+
+lint_checking file = ../rtl/md_lr_pkg.sv {
+  // Waive recompilation guards
+  CDWARN off 9-9;
+  CDWARN off 10-10;
+  CDWARN off 34-34;
+  USEMAC off 10-10;
+
+  // Package is imported inside of a blackboxed module
+  USEPKG off;
+}
+
+lint_checking file = ../rtl/Reduction_Tree.sv {
+  // Allow outout ports to be assigned asynchronously
+  SYNPRT off;
+}

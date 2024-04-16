@@ -1,0 +1,49 @@
+// ==========================================================================
+//
+// Original Author: aducimo
+// Filename       : design_info.txt
+// Description    : Cadence HAL design info text file.
+// 
+// ==========================================================================
+
+// blackbox IP submodules as they should have been linted standalone
+bb_list {
+  designunit = FpAdd;
+  designunit = FpMul;
+  designunit = toFp;
+  designunit = customdelay;
+}
+
+lint_checking file = ../rtl/coeffgen_3rdo.sv {
+ // Allow top-level ports to be unregistered
+ TPOUNR off;
+
+ // Allow active high asynchronous resets
+ ASNRST off;
+
+ // Lower bound of poi?2 wires are non-zero to align with stage identifiers
+ BOUINC off 187-189;
+
+ // Lower bound of poi?3 wires are non-zero to align with stage identifiers
+ BOUINC off 191-193;
+
+ // poi?3 wires are one-pin buses for simplicity of potential future
+ // extension
+ ONPNSG off 191-193;
+
+ // Lower bound of *oi_poly_? wires are non-zero becuase index 0
+ // would be tied off to a parameter value otherwise
+ BOUINC off 197-199;
+ BOUINC off 201-203;
+ 
+ // Elements of oi_poly_? signals are purposeful aliases for generate
+ // looping
+ DALIAS off 456-468;
+
+ // Elements of i_coord_en are purposeful aliases
+ DALIAS off 1153-1153;
+
+ // Allow reduction ORing over more than 32 signals for unused_ok
+ // assignments. It's the only reduction ORing present
+ REDOPR off;
+}

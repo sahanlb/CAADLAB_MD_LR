@@ -1,0 +1,39 @@
+*** Start reading data from input file: ***
+./input_positions.txt
+*** Particle data loading finished ***
+
+
+Max X: 58.005	Max Y: 49.0029	Max Z: 49.0078
+
+Max cell X: 7	Max cell Y: 6	Max cell Z: 6
+*** Start mapping particles to cells ***
+*** Particles mapping to cells finished! ***
+
+Total of (20000) particles recorded
+Total of (0) particles falling out of the range
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.0386, 1.34347, 3.05799
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.068, 7.46677, 2.05731
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 8.8139, 3.95682, 0.006155
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.16, 7.79665, 6.56402
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.56857, 3.73428, 3.39376
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.70833, 5.74866, 3.23331
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.67541, 1.94173, 4.93153
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.77417, 0.710001, 1.1795
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 8.50982, 4.71068, 8.0798
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.0364, 2.90424, 1.18829
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.69799, 7.81292, 0.006185
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 8.55873, 0.001471, 2.96301
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.35821, 5.86142, 0.282202
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.0739, 3.83916, 5.42255
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.97206, 0.001598, 5.31657
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.0199, 1.76488, 8.23289
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 8.72943, 1.9586, 0.006162
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 10.2648, 5.96813, 7.75902
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.98364, 8.42835, 4.10986
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.50016, 5.69376, 5.93144
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.24919, 0.001473, 7.6885
+Overlapping sub-grids. HP: 4.29931, 5.04798, 4.14189	NP: 9.00476, 2.93193, 6.96504
+Particle count: 20000
+Total overlapping neighbors per particle: 229
+Overlapping neighbors from neighbor cells only: 167
+Average number of neighbor particles per particle: 2144

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="s10_user_rst_clkgate_0"
+ megafunction_name="ALTERA_S10_USER_RST_CLKGATE"
+ specifies="all_ports">
+ <global>
+  <pin name="user_reset" direction="output" scope="external" />
+  <pin name="user_clkgate" direction="output" scope="external" />
+ </global>
+</pinplan>

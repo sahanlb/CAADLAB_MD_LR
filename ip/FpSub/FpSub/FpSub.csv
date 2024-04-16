@@ -1,0 +1,20 @@
+# system info FpSub on 2020.11.16.11:34:46
+system_info:
+name,value
+DEVICE,1SG280LN2F43E1VG
+DEVICE_FAMILY,Stratix 10
+GENERATION_ID,0
+#
+#
+# Files generated for FpSub on 2020.11.16.11:34:46
+files:
+filepath,kind,attributes,module,is_top
+sim/FpSub.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,FpSub,true
+altera_fp_functions_181/sim/dspba_library_package.vhd,VHDL,,FpSub_altera_fp_functions_181_maytsbq,false
+altera_fp_functions_181/sim/dspba_library.vhd,VHDL,,FpSub_altera_fp_functions_181_maytsbq,false
+altera_fp_functions_181/sim/FpSub_altera_fp_functions_181_maytsbq.vhd,VHDL,,FpSub_altera_fp_functions_181_maytsbq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+FpSub.fp_functions_0,FpSub_altera_fp_functions_181_maytsbq
